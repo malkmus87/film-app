@@ -1,0 +1,7 @@
+.MovieListItem{
+    width:400px;background:red;
+}
+
+.MovieListItem p{
+    display:inline-block;height:30px;
+}
