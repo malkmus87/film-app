@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import {ButtonStyle,TextInputStyle} from '../../_styles/inputs';
+import {SearchInputStyle,SearchInputTextStyle,SearchButtonStyle} from './Style';
+import {StaticWideFramed} from '../../_styles/layouts';
 interface PropsType {
     onSubmit: Function;
 }
@@ -21,13 +24,14 @@ const SearchInput = (props: PropsType) => {
     }
     
     return (
-        <div>
+        <div style={{...SearchInputStyle,...StaticWideFramed}}>
             <input
+                style={{...TextInputStyle,...SearchInputTextStyle}}
                 type="text"
                 value={searchKey}
                 onChange={onChange}
             />
-            <button onClick={() => onSearch(searchKey)}>Sök</button>
+            <button onClick={() => onSearch(searchKey)} style={{...ButtonStyle,...SearchButtonStyle}}>Sök</button>
         </div>
     )
 }

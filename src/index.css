@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
 body {
-  margin: 0; border:0; padding:0;
+  margin: 0; border:0; padding:0;top:0;left:0;
   font-family:'Cabin';
   position:fixed;
   width:100%;
   height:100vh;
-
+  line-height:"16px";
+  background:linear-gradient(black,white);
 }
 p,div{
-  margin:0;padding:0;text-align:left;
+  margin:0;padding:0;text-align:left;display:block;
+}
+h1{
+  font-size:24px;font-family:'Cousine';
+}
+label{
+  font-weight:600;border:0;margin:0;padding-bottom:5;display:block;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -16,4 +24,7 @@ code {
 }
 .Column {
   display:inline-block; vertical-align:top;
+}
+input[type="text"],button{
+  font-family:'cabin';letter-spacing:1px;
 }
